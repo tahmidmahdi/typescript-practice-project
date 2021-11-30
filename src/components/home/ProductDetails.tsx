@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router';
-import { addToCart } from 'redux/actions/cartActions';
+import { addToCart } from 'redux/actionCreators/cartActions';
 import ProductService from 'services/ProductService';
 import imageUrlParser from 'utils/imageUrlParser';
 interface IParams {
