@@ -7,6 +7,7 @@ const ProductDetails = React.lazy(
 // import ProductDetails from './components/home/ProductDetails';
 const Home = React.lazy(() => import('./pages/Home/Home'));
 const Help = React.lazy(() => import('./pages/Help/Help'));
+const Checkout = React.lazy(() => import('pages/Checkout/Checkout'));
 const AppRouter: React.FC = ({ children }) => {
     return (
         <Router>
@@ -26,6 +27,7 @@ const AppRouter: React.FC = ({ children }) => {
                         path="/product/:id"
                         component={ProductDetails}
                     ></Route>
+                    <Route path="/checkout/" component={Checkout} />
                 </Suspense>
             </Switch>
         </Router>
