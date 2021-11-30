@@ -68,7 +68,9 @@ const Header = () => {
                                 </div>
                             </li>
                             <li>
-                                <BiUser />
+                                <Link to="/login">
+                                    <BiUser />
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -1,3 +1,4 @@
+import Login from 'pages/Login/Login';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const ProductDetails = React.lazy(
@@ -28,6 +29,7 @@ const AppRouter: React.FC = ({ children }) => {
                         component={ProductDetails}
                     ></Route>
                     <Route path="/checkout/" component={Checkout} />
+                    <Route path="/login" component={Login} />
                 </Suspense>
             </Switch>
         </Router>
